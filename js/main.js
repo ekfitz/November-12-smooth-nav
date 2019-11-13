@@ -7,7 +7,9 @@ var nt2 = document.getElementById("nt2");
 var nt3 = document.getElementById("nt3");
 var nt4 = document.getElementById("nt4");
 var hamburger = document.getElementById("hamburger");
-
+var pageLogo = document.getElementById("pageLogo");
+var but1 = document.getElementById("but1");
+var but2 = document.getElementById("but2");
 nb1.style.top = "-15%";
 nb2.style.top = "-15%";
 nb3.style.top = "-15%";
@@ -37,12 +39,18 @@ hamburger.style.top = "2%";
 hamburger.style.transition = "top 1s";
 hamburger.onclick = showNav;
 
+but1.style.left = "10%";
+but2.style.left = "25%";
+
 makeHam();
 var topLine = document.getElementById("topLine");
 var midLine = document.getElementById("midLine");
 var botLine = document.getElementById("botLine");
 
 swapColors();
+
+pageLogo.src = "images/nameless.png";
+pageLogo.style.transform = "scaleX(-1)";
 
 function swapColors() {
   var swap = window.getComputedStyle(hamburger, null).getPropertyValue("background-color");
